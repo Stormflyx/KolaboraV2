@@ -1,0 +1,42 @@
+/* Custom styles for Kolabora App */
+
+.hidden {
+    display: none;
+}
+
+/* Smooth transitions for better UX */
+button, a, div {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Custom scrollbar for task columns */
+.task-column-body {
+    scrollbar-width: thin;
+    scrollbar-color: #94a3b8 #e2e8f0;
+}
+.dark .task-column-body {
+    scrollbar-color: #475569 #1e293b;
+}
+
+.task-column-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.task-column-body::-webkit-scrollbar-track {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+.dark .task-column-body::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+.task-column-body::-webkit-scrollbar-thumb {
+    background-color: #94a3b8;
+    border-radius: 10px;
+    border: 2px solid #e2e8f0;
+}
+
+.dark .task-column-body::-webkit-scrollbar-thumb {
+    background-color: #475569;
+    border: 2px solid #1e293b;
+}
